@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.931);
+  box-shadow: 0 0.125rem 1rem 0 rgb(0 0 0 / 30%);
+  z-index: 10;
+}
+.navWrap {
+  width: 1200px;
+  padding: 0px 24px;
+  /* max-width: 1300px; */
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+}
+.logo {
+  line-height: 0%;
+  font-size: 1.5rem;
+  /* font-weight: 700; */
+  text-align: center;
+}
+.navCat {
+  display: flex;
+  gap: 20px;
+  /* width: 30%; */
+  font-size: 1rem;
+  font-weight: 500;
+  /* max-width: 30%; */
+  justify-content: end;
+  cursor: pointer;
+}
+.navCat p:hover {
+  transform: scale(1.05);
+  color: black;
+  /* color: rgb(16, 16, 16); */
+  animation-duration: 5000ms;
+}
+.hamburger {
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  display: none;
+}
+
+.section {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.sectionWrap {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+.heroContent {
+  width: 60%;
+  /* max-width: 50%; */
+  /* margin-left: 50px; */
+}
+.hero {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img {
+  background-image: url(../images/vizay_dai1.png);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: contain;
+  overflow: hidden;
+  background-color: #c4c5cae0;
+}
+.img:hover {
+  transform: scale(1.01);
+}
+.socialIcons {
+  margin-top: 0.5rem;
+
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.socialIcons i {
+  font-size: 24px;
+  color: #101528cf;
+  cursor: pointer;
+}
+.socialIcons i:hover {
+  transform: scale(1.1);
+  color: black;
+}
+h1,
+h3 {
+  /* margin-top: 0.5rem; */
+  font-weight: 400;
+}
+.hero h1 {
+  margin-top: 1rem;
+}
+.hero h3 {
+  color: #727272;
+}
+.typeWriter h1 {
+  font-weight: 400;
+  overflow: hidden;
+  /* border-right: 0.15 em solid rgb(0, 0, 0); */
+  white-space: nowrap;
+  margin: auto 0;
+  letter-spacing: 0.08em;
+  animation: typing 4s steps(100, end), blink-caret 0.55s step-end infinite;
+}
+.heroContent p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.2rem;
+  color: #3c3c3c;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.education h3 {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #5a5a5a;
+}
+.interest h3 {
+  /* margin-bottom: 0.4rem; */
+  font-weight: 600;
+  color: #5a5a5a;
+}
+.eduInterest {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.education1 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.eduImage {
+  width: 30px;
+  height: 40px;
+  background-image: url(../images/logobz.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-self: center;
+  /* background-color: aquamarine; */
+}
+#eduCourse {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 50%;
+  color: #6a6a6a;
+}
+#eduCollege {
+  font-size: 0.9rem;
+  color: #939393;
+  margin-top: 6px;
+}
+.interest {
+  min-width: 250px;
+}
+.interest ul li {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6a6a6a;
+  list-style: none;
+}
+
+.projectTitle {
+  font-size: 2rem;
+  color: #313131;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+}
+@media (max-width: 768px) {
+  .sectionWrap {
+    display: block;
+  }
+  .section {
+    padding: 3rem 1rem;
+  }
+  .hero {
+    width: 100%;
+  }
+  .heroContent {
+    width: 100%;
+  }
+  .typeWriter h1 {
+    margin-top: 1.5rem;
+  }
+  .socialIcons {
+    width: 250px;
+  }
+}
+
+@media (max-width: 425px) {
+  .navCat {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
