@@ -124,9 +124,11 @@
   justify-content: center;
 }
 .sectionWrap {
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
   /* flex-wrap: wrap; */
 }
 .heroContent {
@@ -283,11 +285,20 @@ h3 {
   text-rendering: optimizeLegibility;
 }
 .projectCard {
-  width: 300px;
-  height: 400px;
-  background-color: aqua;
+  width: 280px;
+  height: 360px;
+  background-color: rgb(225, 225, 225);
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: 1px 1px 5px 0px #848484;
+}
+.projectCard h1 {
+  font-size: 1.4rem;
+  margin: 0px 0.3rem;
+}
+.projectCard p {
+  margin: 0.5rem;
+  font-size: 0.8rem;
 }
 .thumbnail {
   background-image: url(../images/logobz.png);
