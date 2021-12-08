@@ -9,17 +9,20 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <nav class="navbar">
+
+    <nav class="navbar" style="display: flex; justify-content: center; align-items: center; position: sticky;">
         <div class="navWrap">
             <div class="logo">VIZAY SEDHAIN</div>
             <div class="navCat">
-                <p>Home</p>
-                <p>About</p>
-                <p>Projects</p>
+                <p style="margin-bottom: 0px;">Home</p>
+                <p style="margin-bottom: 0px;">About</p>
+                <p style="margin-bottom: 0px;">Projects</p>
             </div>
             <div class="hamburger"></div>
         </div>
@@ -30,8 +33,8 @@
                 <div class="img">
                     <!-- <img src="./images/vizay_dai1.png" alt="" srcset=""> -->
                 </div>
-                <h1>Vizay Kr. Sedhain.</h1>
-                <h3>Mechanical Engineer</h3>
+                <h1 style="font-size: 1.357rem;">Vizay Kr. Sedhain.</h1>
+                <h3 style="font-size: 1.3rem;">Mechanical Engineer</h3>
                 <div class="socialIcons">
                     <i class="far fa-file-pdf"></i>
                     <i class="fab fa-facebook"></i>
@@ -42,30 +45,34 @@
             </div>
             <div class="heroContent">
                 <div class="typeWriter">
-                    <h1>Hi I'm Vizay.</h1>
+                    <h1 style="font-size: 1.357rem; ">Hi I'm Vizay.</h1>
                 </div>
-                <p>I am a recent graduate from the Department of Mechanical Engineering at Stanford University, where I
+                <p style="margin-bottom: 0px;">I am a recent graduate from the Department of Mechanical Engineering at
+                    Stanford University, where I
                     obtained a Master
                     of Science degree specializing in Robotics and Artificial Intelligence.</p>
-                <p>I am a recent graduate from the Department of Mechanical Engineering at Stanford University, where I
+                <p style="margin-bottom: 0px;">I am a recent graduate from the Department of Mechanical Engineering at
+                    Stanford University, where I
                     obtained a
                     Master
                     of Science degree specializing in Robotics and Artificial Intelligence.</p>
-                <p>I am a recent graduate from the Department of Mechanical Engineering at Stanford University, where I
+                <p style="margin-bottom: 0px;">I am a recent graduate from the Department of Mechanical Engineering at
+                    Stanford University, where I
                     obtained a
                     Master
                     of Science degree specializing in Robotics and Artificial Intelligence.</p>
                 <div class="eduInterest">
                     <div class="education">
-                        <h3>Education</h3>
+                        <h3 style="font-size: 1.3rem;">Education</h3>
                         <div class="education1">
                             <div class="eduImage">
 
                             </div>
                             <div class="eduContent">
-                                <p id="eduCourse">M.S. in Mechanical Engineering: Robotics, 2020
+                                <p style="margin-bottom: 0px;" id="eduCourse">M.S. in Mechanical Engineering: Robotics,
+                                    2020
                                 </p>
-                                <p id="eduCollege">Stanford University, USA
+                                <p style="margin-bottom: 0px;" id="eduCollege">Stanford University, USA
                                 </p>
                             </div>
                         </div>
@@ -74,16 +81,17 @@
 
                             </div>
                             <div class="eduContent">
-                                <p id="eduCourse">M.S. in Mechanical Engineering: Robotics, 2020
+                                <p style="margin-bottom: 0px;" id="eduCourse">M.S. in Mechanical Engineering: Robotics,
+                                    2020
                                 </p>
-                                <p id="eduCollege">Stanford University, USA
+                                <p style="margin-bottom: 0px;" id="eduCollege">Stanford University, USA
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="interest">
-                        <h3>Interest</h3>
-                        <ul>
+                        <h3 style="font-size: 1.3rem;">Interest</h3>
+                        <ul style="padding: 0;">
                             <li>Autocad</li>
                             <li>Mechanical drowing</li>
                             <li>design</li>
@@ -97,25 +105,113 @@
     </section>
     <section class="section projectSection">
         <h1 class="projectTitle">My Projects</h1>
-        <div class="sectionWrap">
-            <div class="projectCard">
-                <div class="thumbnail">
+        <div class="sectionWrap sectionWrapProject">
+
+            <div class="projectCard" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                <div class="thumbnail" style="background-image: url(./images/solar\ pannal\ cleaning\ robot\ \ 2.jpg);">
 
                 </div>
                 <h1>Solar Panel cleaning robot</h1>
-                <p>Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar panel. It
+                <p>Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar panel.
+                    It
                     was the scaled model
                     to simulate the performance</p>
             </div>
-            <div class="projectCard">
-                <div class="thumbnail">
+
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Solar Panel cleaning robot</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projectCard" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <div class="thumbnail" style="background-image: url(./images/solar\ pannal\ cleaning\ robot\ 1.jpg);">
 
                 </div>
                 <h1>Automatic fighting Robot</h1>
                 <p>Second position in international robtics competition organized by Robotics accociation of Nepal.</p>
             </div>
-            <div class="projectCard">
-                <div class="thumbnail">
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Automatic fighting Robot</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectCard" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                <div class="thumbnail" style="background-image: url(./images/BWB\ 8.JPG);">
 
                 </div>
                 <h1>Solar Panel cleaning robot</h1>
@@ -123,8 +219,50 @@
                     was the scaled model
                     to simulate the performance</p>
             </div>
-            <div class="projectCard">
-                <div class="thumbnail">
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Solar Panel cleaning robot</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectCard" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                <div class="thumbnail" style="background-image: url(./images/brain\ strom\ 4.jpg);">
 
                 </div>
                 <h1>Solar Panel cleaning robot</h1>
@@ -132,8 +270,50 @@
                     was the scaled model
                     to simulate the performance</p>
             </div>
-            <div class="projectCard">
-                <div class="thumbnail">
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Solar Panel cleaning robot</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectCard" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                <div class="thumbnail" style="background-image: url(./images/solar\ pannal\ cleaning\ robot\ \ 2.jpg);">
 
                 </div>
                 <h1>Solar Panel cleaning robot</h1>
@@ -141,17 +321,109 @@
                     was the scaled model
                     to simulate the performance</p>
             </div>
-            <div class="projectCard">
-                <div class="thumbnail">
+            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Solar Panel cleaning robot</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectCard" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                <div class="thumbnail" style="background-image: url(./images/solar\ pannal\ cleaning\ robot\ \ 2.jpg);">
 
                 </div>
                 <h1>Solar Panel cleaning robot</h1>
                 <p>Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar panel. It
                     was the scaled model
                     to simulate the performance</p>
+            </div>
+            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Solar Panel cleaning robot</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+                            Hybrid robot consist of carrier robot and cleaning robot was developed for cleaning solar
+                            panel. It
+                            was the scaled model
+                            to simulate the performance
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <section class="footer">
+        <div class="sectionWrap">
+            sa
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

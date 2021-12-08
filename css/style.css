@@ -74,8 +74,8 @@
   opacity: 0;
   position: absolute;
   content: "";
-  height: 100%;
-  width: 100%;
+  height: 111%;
+  width: 111%;
   border: 25px solid #c4c5cae0;
   border-radius: 100%;
   animation-name: ripple;
@@ -93,8 +93,8 @@
   opacity: 0;
   position: absolute;
   content: "";
-  height: 100%;
-  width: 100%;
+  height: 111%;
+  width: 111%;
   border: 25px solid #c4c5ca;
   border-radius: 100%;
   animation-name: ripple;
@@ -127,14 +127,15 @@
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 6rem;
   justify-content: center;
-  /* flex-wrap: wrap; */
+}
+.sectionWrapProject {
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
 .heroContent {
   width: 60%;
-  /* max-width: 50%; */
-  /* margin-left: 50px; */
 }
 .hero {
   width: 250px;
@@ -191,6 +192,7 @@ h3 {
   font-size: 1rem;
   font-weight: 500;
   margin-top: 0.2rem;
+
   color: #3c3c3c;
 }
 @keyframes typing {
@@ -201,27 +203,7 @@ h3 {
     width: 200px;
   }
 }
-/* .img {
-  z-index: 100;
-  animation-name: test;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-@keyframes test {
-  0% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.01);
-  }
-  50% {
-    transform: scale(1.03);
-  }
-  100% {
-    transform: scale(1);
-  }
-} */
+
 .education h3 {
   margin-bottom: 0.4rem;
   font-weight: 600;
@@ -287,10 +269,13 @@ h3 {
 .projectCard {
   width: 280px;
   height: 360px;
-  background-color: rgb(225, 225, 225);
+  /* background-color: rgb(225, 225, 225); */
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 1px 1px 5px 0px #848484;
+  box-shadow: 1px 0px 5px 0px #bcbcbc;
+}
+.projectCard:hover {
+  transform: rotateZ(-3deg);
 }
 .projectCard h1 {
   font-size: 1.4rem;
@@ -301,16 +286,17 @@ h3 {
   font-size: 0.8rem;
 }
 .thumbnail {
-  background-image: url(../images/logobz.png);
   background-position: center;
+  background-size: cover;
+  /* flex: 1; */
   width: 100%;
-  height: 200px;
+  height: 170px;
   background-color: beige;
 }
 @media (max-width: 768px) {
-  .sectionWrap {
+  /* .sectionWrap {
     display: block;
-  }
+  } */
   .section {
     padding: 3rem 1rem;
   }
