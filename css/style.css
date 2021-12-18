@@ -278,7 +278,8 @@ h3 {
   box-shadow: 1px 0px 5px 0px #bcbcbc;
 }
 .projectCard:hover {
-  transform: rotateZ(-3deg);
+  /* transform: rotateZ(-3deg); */
+  transform: scale(1.01);
 }
 .projectCard h1 {
   font-size: 1.4rem;
