@@ -279,7 +279,7 @@ h3 {
 }
 .projectCard:hover {
   /* transform: rotateZ(-3deg); */
-  transform: scale(1.01);
+  transform: scale(1.05);
 }
 .projectCard h1 {
   font-size: 1.4rem;
