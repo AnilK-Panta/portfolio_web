@@ -7,6 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
+i {
+  color: #444444;
+}
 .navbar {
   width: 100%;
   height: 70px;
@@ -55,7 +58,18 @@ html {
   background-color: black;
   display: none;
 }
-
+#ioeLink:hover {
+  text-decoration: underline !important;
+}
+.professionalJourney {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+.professionalJourney li {
+  font-weight: 600;
+  color: #5a5a5a;
+}
 /* animation start  */
 .img {
   position: relative;
@@ -147,11 +161,12 @@ html {
   align-items: center;
 }
 .img {
-  background-image: url(../images/vizay_dai1.png);
+  background-image: url(../images/profile.JPG);
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   /* overflow: hidden; */
   background-color: #c4c5ca;
 }
@@ -218,7 +233,7 @@ h3 {
   color: #5a5a5a;
 }
 .eduInterest {
-  margin-top: 3rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   gap: 20px;
