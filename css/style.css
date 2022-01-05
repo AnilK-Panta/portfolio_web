@@ -4,9 +4,9 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-body {
+/* body {
   background-color: #e0ff002e !important;
-}
+} */
 html {
   scroll-behavior: smooth;
 }
@@ -298,6 +298,7 @@ h3 {
 .projectCard:hover {
   /* transform: rotateZ(-3deg); */
   transform: scale(1.05);
+  transition-duration: 700ms;
 }
 .projectCard h1 {
   font-size: 1.4rem;
